@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<title>Page Scroller DRAGON</title>
+	
+	<link rel="icon" type="image/png" href="./images/favicon.png" />
+	<link rel="stylesheet" href="./stylesheets/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="./stylesheets/pagescroller.skins.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="./stylesheets/prettyPhoto.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="./stylesheets/layout.css" type="text/css" media="screen" />
+
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Open+Sans:400italic,400,700,800' rel='stylesheet' type='text/css' />
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	
+	<!-- LINK PAGE SCROLLER PRO FILE HERE -->
+	<script type="text/javascript" src="./javascripts/jquery.pagescroller.js"></script>
+	<!-- / -->
+
+	<!-- LINK TINYBOX HERE -->	
+	<link rel="stylesheet" href="tinybox/style.css" />
+<script type="text/javascript" src="tinybox/tinybox.js"></script>
+
+	
+	<script type="text/javascript" src="./javascripts/bootstrap.js"></script>
+	<script type="text/javascript" src="./javascripts/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="./javascripts/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="./javascripts/application.js"></script>
+	<script type="text/javascript">
+
+	$(document).ready(function(){
+
+    $('#wrapper').pageScroller({
+        navigation: '#myNavigation',
+        scrollOffset: -50    
+    });	
+
+		// initiate page scroller plugin
+		$('#wrapper').pageScroller({
+// 			navigation: false,
+			keyboardControl: false
+		});
+		
+		// assigns 'next' API command to link
+		$('#arrow-controls .next').bind('click', function(e){
+			e.preventDefault();
+			pageScroller.next();
+		});
+
+		// assigns 'previous' API command to link		
+		$('#arrow-controls .prev').bind('click', function(e){
+			e.preventDefault();
+			pageScroller.prev();
+		});
+		
+					
+	});
+		
+
+<!--	
+// 	$(document).ready(function(){
+// 		
+// 		// initiate page scroller plugin
+// 		$('#wrapper').pageScroller({
+// 			navigation: '.pageScrollerNav',
+// 			animationSpeed: 750,
+// 			animationType: 'easeOutExpo'
+// 		});
+// 
+// 	});
+// 		
+		/*	AVAILABLE OPTIONS (Page Scroller PRO):
+		 *	
+		 *	animationSpeed				speed of page transition (milliseconds)
+		 *	animationType				animation type during page transition - default: 'swing'
+		 *	keyboardControl				hijacks keyboard arrows for page navigation
+		 *	deepLink					appends hash tag to window URL when navigating, link-back
+		 *	sectionClass				class used to determine page sections
+		 *	navigation					array of label names, array of anchors (jQuery selector)
+		 *	navigationClass				alters skin type 'standardNav light' by default
+		 *								skins: 	'iconNav left', 'standardNav left', 'topNav','dropdownNav'
+		 *										'slideNav left', 'dotNav left', 'arrows'
+		 *	navigationLabel				tab label for drop down & slide out skins
+		 *	linkClass					unique class for page scroller navigation links
+		 *	scrollOffset				distance offset of scroll target
+		 *	HTML5mode					uses <section> and <nav> elements
+		 *	animationBefore				callback: assign a function before animation
+		 *	animationComplete			callback: assign a function after animation
+		 *	onChange					callback: assign a function for when section changes
+		 *	
+		*/
+		
+	-->
+	</script>
+	
+</head>
+
+<body>
+
+<!-- NAVS START HERE -->
+
+	<div id="arrow-controls" style="padding-top:20px;">
+			<a href="#" class="prev"><img src="./images/buttons/up.png" alt="" width="30" height="53" /></a>
+			<a href="#" class="next"><img src="./images/buttons/down.png" alt="" width="38" height="53" /></a>
+	</div>
+
+
+<div id="myNavigation" class="pageScrollerNav topNav" style="height:76px; width:100%; background-color:#ec3341; top:0px;">
+
+
+	<div class="content" style="height:138px;">	
+		<img src="images/nav/nav_02.png" style="position:absolute; z-index:10; top:0px; left:0px; "/>
+			<div style="width:960px; height:54px; padding-left:80px; padding-top:20px; border-width:0px; border-style:solid; border-color:#B70EEC;">
+		<ul style="z-index:100;" >
+
+	
+				<li><a href="#">
+					<img src="images/buttons/about.png" width="195" height="53" /></a></li>
+				<li><a href="#">
+					<img src="images/buttons/company.png" width="253" height="53" /></a></li>
+				<li><a href="#">
+					<img src="images/buttons/safety.png" width="85" height="53" style="padding-left:20px"/></a></li>
+				<li><a href="#">
+					<img src="images/buttons/products.png" width="113" height="53" /></a></li>
+				<li><a href="#">
+					<img src="images/buttons/contact.png" width="115" height="53" style="padding-left:5"/></a></li>
+				<li><a href="#">
+					<img src="images/buttons/PDF.png" width="127" height="53" /></a></li>
+			
+		</ul></div>
+	</div> <!-- [END] .content -->
+</div> <!-- [END] .pageScrollerNav -->
+
+
+
+<!-- ABOUT / FIRST SECTION STARTS HERE -->
+	
+<div id="wrapper">
+<div id="home" class="section blackBg" style="padding-top:60px">
+
+	<div class="content" style="height:840px;">
+		<div id="slider" class="carousel slide">
+			<div class="carousel-inner">
+				<div class="item active" title="Slide Title 1"><img src="./images/slides/girl_02.jpg" alt="" width="960" height="839" /></div>
+				<div class="item" title="Slide Title 3"><img src="./images/slides/kids_02.jpg" alt="" width="960" height="839" /></div>
+				<div class="item" title="Slide Title 4"><img src="./images/slides/guy_02.jpg" alt="" width="960" height="839" /></div>
+
+			</div><!-- [END] .carousel-inner -->
+		</div><!-- [END] #slider -->
+		<div class="colRight">
+			<div class="heading">
+			</div>
+			<ul class="controls">
+<!--
+				<li class="prev"><a href="#"> &#60; </a></li>
+				<li class="next"><a href="#"> &#62; </a></li>
+ 
+				<li class="prev"><a href="#">&#8592;</a></li>
+				<li class="next"><a href="#">&#8594;</a></li>
+ -->
+			</ul>
+		</div><!-- [END] .colRight -->
+	</div><!-- [END] .content -->
+
+	
+		
+<!-- COMPANY / SECOND SECTION STARTS HERE -->
+		<div class="section about" style="height:1358px;"><!-- MUST STATE EXACT HEIGHT -->
+
+			<div class="content" style="height:1300px;">
+			
+			<div height="500px" style="height:700px;">
+			<img src="images/pages/aboutTxt1.png" width="959px" height="193px" alt="" style="height:193px; position:relative; top:300px;" />
+			</div>
+			
+			<div>
+			<img src="images/pages/aboutTxt2.png" width="959px" height="226px" alt="" style="height:226px; position:relative; top:300px;" />
+			</div>
+			
+			</div><!-- [END] .content -->
+		</div><!-- [END] #about -->
+		
+	
+		
+<!-- SAFETY / THIRD SECTION STARTS HERE -->	
+		<div id="" class="section yellaBg" style="height:724px;">
+			<div class="content">
+			<img src="images/dragons/dragon_11.jpg" width="959" alt="" style="height:724px;" />
+			</div><!-- [END] .content -->
+		</div><!-- [END] #our-history -->
+
+
+
+<!-- PRODUCTS / FOURTH SECTION STARTS HERE -->	
+		<div id="" class="section whiteBg">
+			<div class="content">
+			
+<table class="3ColTable" cellpadding="0" cellspacing="0" width="960px" >
+
+	<tr  style="height:225px;"><td colspan="3">
+			<img src="images/dragons/dragon_13.jpg" width="960px" alt="" /></td>
+	</tr>
+
+	<tr><!-- FIRST ROW -->
+		<td  class="threeCol dashRightBot">
+		<div class="innerMargin">
+			<div class="onLeft">
+				<img src="images/fireworks/500G/500G-14.png" style="width:142px; height:194px;" />				
+				
+<ul class="popup"><!-- FIRST POPUP -->
+	<li>
+	<a><img src="images/btn_bigpic.png" /></a>
+		<div>
+				<img src="images/popups/popup_all.png"/>
+<!-- 
+			<img class="bigpic" src="images/fireworks/500G/500G-14.png"/>
+
+				<img src="images/fireworks/500G/500G-14.png"/>
+			
+				<span class="hed bot">HEADLINE HERE</span>
+				<span class="descrip top">Item No. FF5021<br />
+				13 Shots • 500G • 6/1<br /><br />
+				13 shots blue and white glitter, crackling to red/green, orange and green strobe, and gold crackling chrysanthemum<br /></span>
+-->
+		</div>
+	</li>
+	
+		<li onclick="TINY.box.show({iframe:'vid.html',boxid:'frameless',width:800,height:460,fixed:false,maskid:'graymask',maskopacity:40,closejs:function(){closeJS()}})"><img src="images/btn_video.png" /></li>
+		<div>
+		
+		
+		</div>
+	</li>
+
+</ul>		
+			
+			</div>					
+			<div class="onRight" >
+				<div class="hed" ><span class="bot">HEADLINE HERE</span></div>				
+				<div class="descrip"><span class="top">Item No. FF5021<br />
+				13 Shots • 500G • 6/1<br /><br />
+				13 shots blue and white glitter, crackling to red/green, orange and green strobe, and gold crackling chrysanthemum<br /></span></div>
+			</div>
+		</div>
+		</td>
+
+				
+		<td  class="threeCol dashRightBot">
+		<div class="innerMargin">
+			<div class="onLeft">
+				<img src="images/fireworks/500G/500G-14.png" style="width:142px; height:194px;" />
+
+
+<ul class="popup"><!-- SECOND ONE -->
+	<li>
+	<a><img src="images/btn_bigpic.png" /></a>
+		<div>
+				<img src="images/popups/popup_all.png"/>
+		</div>
+	</li>
+
+	<li>
+	<a><img src="images/btn_video.png" /></a>
+		<div>
+		<object width="560" height="315">
+<!-- 
+		<param name="movie" value="http://www.youtube.com/v/q1yLRK2M8YQ?hl=en_US&amp;version=3&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/q1yLRK2M8YQ?hl=en_US&amp;version=3&amp;rel=0" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
+ -->
+		</object>	
+		</div>
+	</li>
+</ul>
+
+
+			</div>					
+			<div class="onRight" >
+				<div class="hed" ><span class="bot">HEADLINE HERE</span></div>				
+				<div class="descrip"><span class="top">Item No. FF5021<br />
+				13 Shots • 500G • 6/1<br /><br />
+				13 shots blue and white glitter, crackling to red/green, orange and green strobe, and gold crackling chrysanthemum<br /></span></div>
+			</div>
+		</div>
+		</td>
+		
+		<td  class="threeCol dashRightBot">
+		<div class="innerMargin">
+			<div class="onLeft">
+				<img src="images/fireworks/500G/500G-14.png" style="width:142px; height:194px;" />
+				<a href="http://www.cnn.com" target="_blank"><img src="images/btn_bigpic.png" /></a>
+				<a href="http://www.nbc.com" target="_blank"><img src="images/btn_video.png" /></a>
+			</div>					
+			<div class="onRight" >
+				<div class="hed" ><span class="bot">HEADLINE HERE</span></div>				
+				<div class="descrip"><span class="top">Item No. FF5021<br />
+				13 Shots • 500G • 6/1<br /><br />
+				13 shots blue and white glitter, crackling to red/green, orange and green strobe, and gold crackling chrysanthemum<br /></span></div>
+			</div>
+		</div>
+		</td>	
+	</tr>
+	
+	<tr><!-- NEXT ROW -->
+		<td  class="threeCol dashRightBot">
+		<div class="innerMargin">
+			<div class="onLeft">
+				<img src="images/fireworks/500G/500G-14.png" style="width:142px; height:194px;" />
+				<a href="http://www.cnn.com" target="_blank"><img src="images/btn_bigpic.png" /></a>
+				<a href="http://www.nbc.com" target="_blank"><img src="images/btn_video.png" /></a>
+			</div>					
+			<div class="onRight" >
+				<div class="hed" ><span class="bot">HEADLINE HERE</span></div>				
+				<div class="descrip"><span class="top">Item No. FF5021<br />
+				13 Shots • 500G • 6/1<br /><br />
+				13 shots blue and white glitter, crackling to red/green, orange and green strobe, and gold crackling chrysanthemum<br /></span></div>
+			</div>
+		</div>
+		</td>
+		
+		<td  class="threeCol dashRightBot">
+		<div class="innerMargin">
+			<div class="onLeft">
+				<img src="images/fireworks/500G/500G-14.png" style="width:142px; height:194px;" />
+				<a href="http://www.cnn.com" target="_blank"><img src="images/btn_bigpic.png" /></a>
+				<a href="http://www.nbc.com" target="_blank"><img src="images/btn_video.png" /></a>
+			</div>					
+			<div class="onRight" >
+				<div class="hed" ><span class="bot">HEADLINE HERE</span></div>				
+				<div class="descrip"><span class="top">Item No. FF5021<br />
+				13 Shots • 500G • 6/1<br /><br />
+				13 shots blue and white glitter, crackling to red/green, orange and green strobe, and gold crackling chrysanthemum<br /></span></div>
+			</div>
+		</div>
+		</td>
+		
+		<td  class="threeCol dashRightBot">
+		<div class="innerMargin">
+			<div class="onLeft">
+				<img src="images/fireworks/500G/500G-14.png" style="width:142px; height:194px;" />
+				<a href="http://www.cnn.com" target="_blank"><img src="images/btn_bigpic.png" /></a>
+				<a href="http://www.nbc.com" target="_blank"><img src="images/btn_video.png" /></a>
+			</div>					
+			<div class="onRight" >
+				<div class="hed" ><span class="bot">HEADLINE HERE</span></div>				
+				<div class="descrip"><span class="top">Item No. FF5021<br />
+				13 Shots • 500G • 6/1<br /><br />
+				13 shots blue and white glitter, crackling to red/green, orange and green strobe, and gold crackling chrysanthemum<br /></span></div>
+			</div>
+		</div>
+		</td>	
+	</tr>
+
+	<tr><!-- NEXT ROW -->
+		<td  class="threeCol dashRightBot">
+		<div class="innerMargin">
+			<div class="onLeft">
+				<img src="images/fireworks/500G/500G-14.png" style="width:142px; height:194px;" />
+				<a href="http://www.cnn.com" target="_blank"><img src="images/btn_bigpic.png" /></a>
+				<a href="http://www.nbc.com" target="_blank"><img src="images/btn_video.png" /></a>
+			</div>					
+			<div class="onRight" >
+				<div class="hed" ><span class="bot">HEADLINE HERE</span></div>				
+				<div class="descrip"><span class="top">Item No. FF5021<br />
+				13 Shots • 500G • 6/1<br /><br />
+				13 shots blue and white glitter, crackling to red/green, orange and green strobe, and gold crackling chrysanthemum<br /></span></div>
+			</div>
+		</div>
+		</td>
+		
+		<td  class="threeCol dashRightBot">
+		<div class="innerMargin">
+			<div class="onLeft">
+				<img src="images/fireworks/500G/500G-14.png" style="width:142px; height:194px;" />
+				<a href="http://www.cnn.com" target="_blank"><img src="images/btn_bigpic.png" /></a>
+				<a href="http://www.nbc.com" target="_blank"><img src="images/btn_video.png" /></a>
+			</div>					
+			<div class="onRight" >
+				<div class="hed" ><span class="bot">HEADLINE HERE</span></div>				
+				<div class="descrip"><span class="top">Item No. FF5021<br />
+				13 Shots • 500G • 6/1<br /><br />
+				13 shots blue and white glitter, crackling to red/green, orange and green strobe, and gold crackling chrysanthemum<br /></span></div>
+			</div>
+		</div>
+		</td>
+		
+		<td  class="threeCol dashRightBot">
+		<div class="innerMargin">
+			<div class="onLeft">
+				<img src="images/fireworks/500G/500G-14.png" style="width:142px; height:194px;" />
+				<a href="http://www.cnn.com" target="_blank"><img src="images/btn_bigpic.png" /></a>
+				<a href="http://www.nbc.com" target="_blank"><img src="images/btn_video.png" /></a>
+			</div>					
+			<div class="onRight" >
+				<div class="hed" ><span class="bot">HEADLINE HERE</span></div>				
+				<div class="descrip"><span class="top">Item No. FF5021<br />
+				13 Shots • 500G • 6/1<br /><br />
+				13 shots blue and white glitter, crackling to red/green, orange and green strobe, and gold crackling chrysanthemum<br /></span></div>
+			</div>
+		</div>
+		</td>	
+	</tr>
+
+		</table>
+	</div><!-- [END] .content -->
+</div><!-- [END] #our-history PRODUCTS -->
+
+
+
+
+
+<!-- 
+		<div class="section about" style="height:1358px;"><!~~ MUST STATE EXACT HEIGHT ~~>
+
+			<div class="content" style="height:1300px;">
+			
+			<div height="500px" style="height:700px;">
+				<img src="images/pages/aboutTxt1.png" width="959px" height="193px" 
+				alt="" style="height:193px; position:relative; top:300px;">
+			</div>
+ -->
+
+
+
+
+
+<!-- CONTACT / FIFTH SECTION STARTS HERE -->
+<div id="contact-us" class="section contacty" style="height:2113px;"><!-- CONTAINS 'CONTACT US' BKG -->
+<div class="content" style="height:1885px;">
+	<h2></h2><!-- CONTAINS 'CONTACT US' HEADER -->
+
+	<div class="colLeft">
+	<p class="hed" style="font-size:2.25em; letter-spacing:1px;">WILD DRAGON CONTACT INFO</p>
+		<div class="container">
+		<div class="dashBot" style="padding:10px;">
+			<p class="hed" style="font-size:1.75em; letter-spacing:0px;">HEADQUARTERS</p>
+			<p>60 West Ct.<br />
+			Mandeville, LA 70471<br />
+			O: 985.867.3436<br />
+			F: 985.867.3446</p>
+		</div>
+		<div style="padding:20px 10px;">
+			<p class="hed" style="font-size:1.75em; letter-spacing:0px;">REPRESENTATIVES</p>
+
+			<p>South Carolina/North Carolina<br />
+			Justin Pruett<br />
+			justin@wilddragonfireworks.com<br />
+			803.271.5944</p>
+			
+			<p>Alabama/Tennessee/Georgia/Florida<br />
+			John Feigert<br />
+			john@wilddragonfireworks.com<br />
+			770.842.3977</p>
+			
+			<p>Louisiana/Mississippi/Texas<br />
+			Erick Bertrand<br />
+			erick@wilddragonfireworks.com<br />
+			985.290.2712</p>
+			
+			<p>All Other States<br />
+			John Feigert <br />
+			john@wilddragonfireworks.com<br />
+			770.842.3977</p>
+		</div>
+
+		</div><!-- [END] .container -->
+	</div><!-- [END] .colLeft -->
+
+
+
+	<div class="colRight dashLeft">
+
+		<p class="hed" style="height:1em;">WILD DRAGON CONTACT FORM</p>
+		<div class="container">
+
+<!-- 
+    <form name="toast_form" id="send_toast" method="post" ENCTYPE="multipart/form-data" action="mailer.php" >      
+        Your Name:<br />
+        <input name="yourName" type="text" size="1" maxlength="50" id="yourName" class="required"/>	<br /><br />
+ -->
+
+			<form name="contactmail" id="send_cmail" method="post" ENCTYPE="multipart/form-data" action="contacty.php">
+
+				<input type="text" value="Full Name" class="field" name="name" id="name" />
+				<input type="text" value="Address" class="field" name="address" id="address" />
+				<input type="text" value="Phone Number" class="field" name="phone" id="phone" />
+				<input type="text" value="Email Address" class="field" name="email" id="email" />
+				<input type="text" value="Company [optional]" class="field" name="company" id="company" />
+				<textarea cols="40" rows="10" class="message" name="message" id="message" >Message..</textarea>
+<!--					<input type="submit" value="submit" />-->
+			<input type="image" src="images/pages/submit.png" name="submit" value="submit" style="position:relative; left:130px; top:60px; z-index:5000"/>
+				
+<!-- 
+				<a href="http://www.cnn.com" target="_blank"><img src="images/pages/submit.png" /></a>				
+ -->
+<!-- 
+                <input type="image" src="img/send_toast.png" name="submit" value="submit" style="width:33%; background:none" />    
+				<span class="response">&nbsp;</span>
+-->
+			</form>
+		</div><!-- [END] .container -->	
+	</div><!-- [END] .colRight -->
+					
+					
+					
+			</div><!-- [END] .content -->
+		</div><!-- [END] #contact-us -->
+	</div><!-- [END] #wrapper -->
+	
+	<div id="footerContainer">
+		<div id="footer">
+			<div class="left">
+				<p>Copyright &copy; 2012 Your Site. All Rights Reserved.</p>
+			</div>
+			<div class="right">
+				<p><a href="#top" class="base">Back To Top</a></p>
+			</div>
+		</div><!-- [END] #footer -->
+	</div><!-- [END] #footerContainer -->
+
+</body><!-- [END] body -->
+
+</html><!-- [END] html -->

@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+	<div class="colRight dashLeft">
+
+		<p class="hed" style="height:1em;">WILD DRAGON CONTACT FORM</p>
+		<div class="container">
+
+<!-- 
+    <form name="toast_form" id="send_toast" method="post" ENCTYPE="multipart/form-data" action="mailer.php" >      
+        Your Name:<br />
+        <input name="yourName" type="text" size="1" maxlength="50" id="yourName" class="required"/>	<br /><br />
+ -->
+
+			<form name="contactmail" id="send_cmail" method="post" ENCTYPE="multipart/form-data" action="contacty.php">
+
+				<input type="text" value="Full Name" class="field" name="name" id="name" />
+				<input type="text" value="Address" class="field" name="address" id="address" />
+				<input type="text" value="Phone Number" class="field" name="phone" id="phone" />
+				<input type="text" value="Email Address" class="field" name="email" id="email" />
+				<input type="text" value="Company [optional]" class="field" name="company" id="company" />
+				<textarea cols="40" rows="10" class="message" name="message" id="message" >Message..</textarea>
+				
+				<input type="image" src="images/pages/submit.png" name="submit" value="submit" style="position:relative; left:130px; top:60px;"/>
+				
+<!-- 
+				<a href="http://www.cnn.com" target="_blank"><img src="images/pages/submit.png" /></a>				
+ -->
+<!-- 
+                <input type="image" src="img/send_toast.png" name="submit" value="submit" style="width:33%; background:none" />    
+				<span class="response">&nbsp;</span>
+-->
+			</form>
+</body>
+</html>
